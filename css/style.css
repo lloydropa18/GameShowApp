@@ -1,0 +1,84 @@
+/* global */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 3em;
+    color: lightblue;
+    margin-top: 0;
+}
+
+
+/* Overlay */
+#overlay {
+    background-color: #1A659E;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#overlay .btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    outline: none;
+}
+#startBtn {
+    background-color: tomato;
+    color: white;
+    transition: background-color .3s ease-out;
+    border: none;
+}
+#startBtn:hover {
+    background-color: #CC3600 ;
+}
+
+/* Main-Game */
+#main-game {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.keyRow button {
+    font-size: 1.6em;
+    display: inline-block;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.keyRow .active {
+    background-color: indigo;
+    color: white;
+}
+.phrase li {
+    display: inline-block;
+    background-color: lightgray;
+    margin: 2px;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    border-radius: 3px;
+    padding-top: 8px;
+    text-align: center;
+    color: transparent;
+    transition: background-color,color .3s ease-in-out;
+}
+.phrase li.show {
+    color: white;
+    background-color: lightblue;
+}
