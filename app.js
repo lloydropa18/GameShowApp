@@ -89,8 +89,10 @@ function reset(winorlose, backgroundcolor){
     h1 = h1.textContent.toUpperCase();
     overlay.style.backgroundColor = backgroundcolor;
     overlay.style.display = "flex";
+    mainGame.style.display = "none";
     startBtn.addEventListener('click',()=>{
         // Reset the random phrase
+        mainGame.style.display = "flex";
         while (ul.firstChild) {
             ul.removeChild(ul.lastChild);
         }
